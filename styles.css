@@ -547,3 +547,51 @@ h1{
     height: 220px;
   }
 }
+.shot__media{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* immagine */
+.shot__media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+/* fascia testo */
+.shot__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 14px 16px;
+  background: rgba(0,0,0,0.65);
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.4;
+
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+}
+
+/* HOVER */
+.shot:hover img{
+  transform: scale(0.92); /* rimpicciolisce */
+}
+
+.shot:hover .shot__overlay{
+  transform: translateY(0); /* compare la fascia */
+}
+@media (max-width: 768px){
+  .shot__overlay{
+    display: none;
+  }
+
+  .shot:hover img{
+    transform: none;
+  }
+}

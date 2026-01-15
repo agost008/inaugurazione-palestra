@@ -124,9 +124,7 @@
     <div class="container">
       <header class="section__header">
         <h2>Il progetto</h2>
-        <p class="muted">
-          Breve descrizione del lavoro svolto dal gruppo (obiettivi, organizzazione, metodo).
-        </p>
+       
       </header>
 
       <div class="cards">
@@ -167,22 +165,51 @@
 
       <div class="gallery">
         <!-- Sostituisci i nomi file con i vostri -->
-        <figure class="shot">
-          <img src="assets/img/foto1.jpg" alt="Foto 1 evento" loading="lazy">
-          <figcaption>Momento 1 — Interno della nuova palestra</figcaption>
-        </figure>
-        <figure class="shot">
-          <img src="assets/img/foto2.jpg" alt="Foto 2 evento" loading="lazy">
-          <figcaption>Momento 2 — Ragazzi dell'istituto che praticano sport idonei</figcaption>
-        </figure>
-        <figure class="shot">
-          <img src="assets/img/foto3.jpg" alt="Foto 3 evento" loading="lazy">
-          <figcaption>Momento 3 — Esterno della palestra</figcaption>
-        </figure>
-        <figure class="shot">
-          <img src="assets/img/foto4.jpg" alt="Foto 4 evento" loading="lazy">
-          <figcaption>Momento 4 — Taglio del nastro</figcaption>
-        </figure>
+<figure class="shot">
+  <div class="shot__media">
+    <img src="assets/img/foto4.jpg" alt="Taglio del nastro">
+    <div class="shot__overlay">
+      Durante l’inaugurazione si è svolto il taglio del nastro alla presenza
+      delle autorità e dei rappresentanti dell’istituto.
+    </div>
+  </div>
+  <figcaption>Taglio del nastro</figcaption>
+</figure>
+
+		<figure class="shot">
+  <div class="shot__media">
+    <img src="assets/img/foto3.jpg" alt="Esterno della palestra">
+    <div class="shot__overlay">
+      Vista esterna della nuova palestra, progettata come spazio moderno e funzionale
+      per le attività sportive e scolastiche dell’istituto.
+    </div>
+  </div>
+  <figcaption>Esterno della palestra</figcaption>
+</figure>
+
+     <figure class="shot">
+  <div class="shot__media">
+    <img src="assets/img/foto1.jpg" alt="Interno della nuova palestra">
+    <div class="shot__overlay">
+      L’interno della struttura sportiva durante l’evento inaugurale, con studenti e
+      visitatori presenti per scoprire i nuovi spazi.
+    </div>
+  </div>
+  <figcaption>Interno della nuova palestra</figcaption>
+</figure>
+
+      <figure class="shot">
+  <div class="shot__media">
+    <img src="assets/img/foto2.jpg" alt="Studenti durante attività sportive">
+    <div class="shot__overlay">
+      Gli studenti dell’istituto partecipano alle prime attività sportive, dimostrando
+      l’utilizzo concreto e immediato della nuova palestra.
+    </div>
+  </div>
+  <figcaption>Studenti in attività sportiva</figcaption>
+</figure>
+
+
       </div>
 
       <div class="hint">
@@ -223,56 +250,29 @@
       </div>
     </div>
   </section>
-
+  
+ 
   <!-- Canva -->
-  <section id="canva" class="section section--alt">
-    <div class="container">
-      <header class="section__header">
-        <h2>Contenuto Canva</h2>
-        <p class="muted">
-          Qui puoi scegliere: <strong>video</strong> esportato da Canva oppure <strong>presentazione</strong> incorporata.
-          Puoi anche lasciarli entrambi e usarne uno solo.
-        </p>
-      </header>
 
-      <div class="grid-2">
-        <!-- Opzione A: Video locale (export Canva in mp4) -->
-        <article class="card card--media">
-          <h3>Opzione A — Video (MP4)</h3>
-          <p class="muted small">Sostituisci <code>assets/video.mp4</code> con il tuo export Canva.</p>
+<section id="canva" class="section section--alt">
+  <div class="container">
+    <header class="section__header">
+      <h2>Contenuto multimediale</h2>
+      <p class="muted">
+        Video riassuntivo realizzato con Canva per documentare i momenti principali
+        dell’inaugurazione.
+      </p>
+    </header>
 
-          <video class="media" controls preload="metadata">
-            <source src="assets/video.mp4" type="video/mp4">
-            Il tuo browser non supporta il tag video.
-          </video>
-        </article>
-
-        <!-- Opzione B: Canva embed (presentazione) -->
-        <article class="card card--media">
-          <h3>Opzione B — Presentazione (Embed)</h3>
-          <p class="muted small">
-            In Canva: Condividi → Incorpora → copia link iframe e sostituisci il <code>src</code> qui sotto.
-          </p>
-
-          <div class="ratio">
-            <iframe
-              class="media"
-              src="https://www.canva.com/design/XXXXXXXXXXX/view?embed"
-              allowfullscreen="allowfullscreen"
-              loading="lazy"
-              title="Presentazione Canva (placeholder)">
-            </iframe>
-          </div>
-
-          <div class="actions actions--tight">
-            <a class="btn btn--ghost" href="https://www.canva.com/" target="_blank" rel="noopener">
-              Apri Canva
-            </a>
-          </div>
-        </article>
-      </div>
+    <div class="card card--media">
+      <video class="media" controls preload="metadata">
+        <source src="assets/canva/presentazione.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+      </video>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Team -->
   <section id="team" class="section">
